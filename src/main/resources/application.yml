@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: 1234
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update # 또는 create, validate, none 등을 선택할 수 있습니다.
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC # 선택적으로 타임존 설정
